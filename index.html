@@ -1,1 +1,114 @@
-hello my name is ChangeRed
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hidden {
+            visibility: hidden;
+        }
+        /* 后代选择器 */
+        /* div p {
+            color: #aaa;
+        } */
+
+        /* 子选择器 */
+        div > p {
+            color: blue;
+        }
+
+        /* 相邻兄弟选择器 */
+        /* div + p {
+            background-color: #bbb;
+        } */
+
+        /* 通用兄弟选择器 */
+        /* div ~ p {
+            background: #bbb;
+        } */
+
+        /* 未访问的链接 */
+        a:link {
+            color: #FF0000;
+        }
+        /* 已访问的链接 */
+        a:visited {
+            color: green;
+        }
+        /* 鼠标悬停链接 */
+        a:hover {
+            color: gray;
+        }
+        /* 已选择的链接 */
+        a:active {
+            color: #0000ff;
+        }
+
+        .shubiao {
+            background-color: green;
+            color:white;
+            margin: 0 50px;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .shubiao:hover {
+            background-color: #bbb;
+        }
+
+        .coming {
+            display: none;
+            background-color: yellow;
+            margin: 0;
+            padding: 0;
+        }
+
+        .here:hover .coming {
+            display: block;
+        }
+
+         /* div:first-child {
+            color: #0000ff;
+         } */
+
+         /* p元素的第一个i元素里变成蓝色 */
+         p i:first-child {
+             color: #0000ff;
+         }
+
+         q:lang(en) {
+             quotes: "+" "+";
+         }
+    </style>
+
+</head>
+
+<body>
+    <h1>哈哈哈</h1>
+    <p class="hidden">这里是第二行文案</p>
+    <div>
+        <p>这是第一个盒子</p>
+        <p>这是第二个盒子</p>
+    </div>
+
+    <p>xiongdi</p>
+    <span>ok</span>
+    <p>jiemei</p>
+    <p><a href="https://www.baidu.com/" target="_blank"><div class="highlight">点击我</div></a></p><br>
+
+    <div class="shubiao">鼠标请放在我这里</div><br>
+    <div class="here">鼠标点这里
+        <p class="coming">我出现了</p>
+    </div>
+
+    <!-- <div class="first">这是一段文本<br>这是一段文本</div> -->
+    <p>我是一个<i>强壮</i>的男人。我是一个<i>强壮</i>的男人。</p>
+    <p>我是一个<i>强壮</i>的男人。我是一个<i>强壮</i>的男人。</p>
+
+    <p>Some text <q lang="en">A quote in a paragraph</q> Some text.</p>
+</body>
+
+</html>
